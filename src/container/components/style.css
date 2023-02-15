@@ -1,0 +1,582 @@
+.parent {
+  overflow-x: hidden;
+}
+nav {
+  position: relative;
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  z-index: 99;
+  justify-content: space-between;
+}
+.logo img {
+  width: 60px;
+  height: 40px;
+  cursor: pointer;
+  color: #868a8f;
+  transition: all 0.3s ease-in-out;
+}
+.logo img:hover {
+  transform: scale(1.2);
+}
+.menu-icon {
+  display: none;
+}
+.fas {
+  cursor: pointer;
+}
+.menu-icon .fa-times {
+  transform: rotate(360deg);
+  transition: all 0.2s ease-in-out;
+  font-size: 20px;
+  font-weight: 600;
+}
+.menu-icon .fa-bars {
+  transform: rotate(180deg);
+  transition: all 0.2s ease-in-out;
+  font-size: 20px;
+  font-weight: 600;
+}
+.menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.menu-list li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 300;
+  padding: 8px 20px;
+  margin-left: 20px;
+  letter-spacing: 0.8px;
+  font-family: "Poppins", sans-serif;
+}
+.menu-list li a:hover {
+  background-color: #000;
+  border-radius: 2px;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    font-size: 20px;
+  }
+  .menu-list li a {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu-icon {
+    display: block;
+  }
+  .menu-list {
+    color: #fff;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    right: 0;
+    top: 71px;
+    background-color: rgba(38, 150, 101, 1.2);
+  }
+  .menu-list li {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .menu-list li:last-child {
+    margin: auto;
+    width: 100%;
+    display: block;
+  }
+  .menu-list.close {
+    right: -100%;
+    transition: all 0.5s ease-in-out;
+  }
+}
+/* ------------------ End of Navbar ------------------ */
+.home-body {
+  background-color: #8cdcb9;
+  height: fit-content;
+}
+.colCombiner {
+  display: flex;
+  justify-content: center;
+}
+.shortPara {
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.shortPara span {
+  color: #868a8f;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+}
+.shortPara h2 {
+  color: #000;
+  font-size: 40px;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.shortPara p {
+  font-size: 15px;
+  padding: 0;
+  margin-top: 9px;
+  font-family: "Poppins", sans-serif;
+}
+.shortPara p::before {
+  content: "\27A4";
+  font-weight: 600;
+  margin-right: 10px;
+  color: tomato;
+}
+.mainbutton {
+  padding: 5px 32px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  margin-top: 15px;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(27, 118, 78);
+}
+.mainbutton:hover {
+  background-color: #065231;
+}
+.imageScreen {
+  position: relative;
+  text-align: center;
+  background-color: rgba(33, 157, 103, 0.3);
+}
+.imageScreen img {
+  height: 340px;
+  width: 340px;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+}
+.introBrand {
+  margin: auto;
+  text-align: center;
+}
+.introBrand h2 {
+  color: #217651;
+  font-size: 38px;
+}
+.introBrand p {
+  color: #000;
+  letter-spacing: 0.5px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px 0px;
+}
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 800px) {
+  .colCombiner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .shortPara {
+    width: 95%;
+    margin: auto;
+  }
+  .imageScreen {
+    display: none;
+  }
+  .colCombiner {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* ------------------ End of Home ------------------ */
+.testimonial-body {
+  background-color: rgb(244, 244, 244);
+  padding: 20px;
+}
+.aboutTestimonial {
+  margin-left: 30px;
+}
+.aboutTestimonial h2 {
+  color: #217651;
+  font-size: 40px;
+}
+.aboutTestimonial p {
+  font-size: 16px;
+  padding: 0;
+  color: #868a8f;
+  margin-top: 9px;
+  font-family: "Poppins", sans-serif;
+}
+.businessInfoCard {
+  width: 20rem;
+  margin: 20px;
+  background-color: transparent;
+  border: none;
+}
+.cardInfo {
+  position: relative;
+}
+.numberCard {
+  position: absolute;
+  top: 20%;
+  font-weight: 700;
+  margin: 26px;
+  letter-spacing: 2px;
+}
+.businessIconList {
+  font-size: 32px;
+  color: #269665;
+  transition: all 0.6s ease;
+}
+.businessInfoCard:hover .businessIconList {
+  transform: translate(30px, 0px);
+}
+.numberCard {
+  color: #8cdcb9;
+  font-size: 80px;
+}
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 600px) {
+  .cardInfo {
+    padding: 0;
+    margin-bottom: 0px;
+    margin-left: -30px;
+  }
+  .businessInfoCard {
+    width: 100%;
+  }
+  .card-body {
+    padding: 0;
+    margin: 0;
+    width: 200px;
+  }
+  .card-body p {
+    width: 250px;
+  }
+}
+/* ------------------ End of Testimonial ------------------ */
+.features-body {
+  background-color: #8cdcb9;
+  /* background-color: #a0e5dd; color: #109083; */
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+.imageCard {
+  padding: 20px 0px;
+}
+.imageCard img {
+  margin: auto;
+  margin: 10px 0px;
+  width: 200px;
+  height: 200px;
+}
+.sliderData h6 {
+  color: #217651;
+}
+.sliderData p {
+  color: #217651;
+  font-weight: 600;
+  font-size: 35px;
+  letter-spacing: 1.5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-img-top {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+.imageSection {
+  width: 330px;
+  height: 490px;
+}
+.card-img-top:hover {
+  transform: scale(1.2);
+}
+.imageSection h5 {
+  font-size: 24px;
+  color: #109083;
+}
+.dataQuote {
+  margin: 20px;
+}
+.imageSection p {
+  font-size: 16px;
+  color: #868a8f;
+}
+.appDesignOne {
+  width: 500px;
+  margin: 0px 8px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(238, 204, 141, 0.3);
+  /* background-color: rgba(187, 107, 93, 0.6); */
+}
+.appDesignOne span {
+  color: #e9845f;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+}
+.appDesignOne h3 {
+  margin: 15px 0px;
+}
+.appDesignOne p {
+  color: #e9845f;
+  font-weight: 600;
+}
+.arrow {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.appDesignTwo {
+  width: 500px;
+  margin: 0px 8px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(140, 220, 185, 0.4);
+}
+.appDesignTwo span {
+  color: #109083;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+}
+.appDesignTwo h3 {
+  margin: 15px 0px;
+}
+.appDesignTwo p {
+  color: #109083;
+  font-weight: 600;
+}
+.appDesignOne p:hover .arrow {
+  transform: translate(25px);
+}
+.appDesignTwo p:hover .arrow {
+  transform: translate(25px);
+}
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 600px) {
+  .dataQuote {
+    width: 100%;
+  }
+  .imageSection {
+    width: 100%;
+  }
+  .card-body {
+    width: 100%;
+  }
+  .card-body h5 {
+    margin: auto;
+    font-size: 19px;
+  }
+  .card-body p {
+    font-size: 14px;
+    margin: 15px auto;
+  }
+  .appDesignOne {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  .appDesignTwo {
+    width: 100%;
+  }
+}
+/* ------------------ End of Features ------------------ */
+.about-body {
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(233, 132, 95, 0.1);
+}
+.aboutIntro {
+  margin: 20px;
+}
+.aboutIntro p {
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px 0px;
+}
+.customerReviewSection {
+  margin: 20px;
+  width: 400px;
+}
+.customerReviewSection p {
+  color: #217651;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.customerSection img {
+  height: 190px;
+  width: 190px;
+  border-radius: 50%;
+  border: 8px solid #5ec5bb;
+}
+.linkdinBtn {
+  display: flex;
+  align-items: center;
+  padding: 5px 32px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  margin-top: 15px;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(32, 135, 91);
+  transition: all 0.3s ease-in-out;
+}
+.linkdinBtn:hover {
+  color: #000;
+  background-color: #5ec5bb;
+}
+/* ------------------ End of About ------------------ */
+.contact-body {
+  width: 100%;
+  background-color: #8cdcb9;
+  padding: 20px;
+}
+.footer-intro h3 {
+  color: #217651;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.footer-intro span {
+  font-weight: 700;
+  font-style: italic;
+}
+.footer-intro p {
+  margin: 15px 0px;
+}
+.socialIcon {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  background-color: #269665;
+  cursor: pointer;
+  margin: 20px 10px 0px 0px;
+}
+.ftipy {
+  font-size: 29px;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.ftipy:hover {
+  color: #000;
+}
+.contactCategory {
+  margin: 0px 0px 20px 40px;
+}
+.contactCategory h4 {
+  color: #217651;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contactCategory p {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+}
+.form-section {
+  text-align: center;
+}
+.errorBoundaries {
+  height: 50px;
+  margin-bottom: 14px;
+}
+.inputFill {
+  height: 40px;
+  width: 400px;
+  color: #0a5434;
+  padding: 0px 15px;
+  border-radius: 5px;
+  border: none;
+}
+.inputFill:focus {
+  outline: none;
+}
+.messageInput {
+  border: none;
+  display: block;
+  margin: auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.messageInput:focus {
+  outline: none;
+}
+.formBtn {
+  color: #fff;
+  font-weight: 600;
+  background-color: #269665;
+  padding: 8px 172px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 15px;
+}
+.error {
+  color: #fff;
+  color: red;
+  margin-top: -2px;
+  padding: 0px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 600px) {
+  .contactCategory {
+    margin: 0px;
+  }
+  .contactCategory h4 {
+    margin-top: 20px;
+  }
+  .footer-intro {
+    margin-bottom: 30px;
+  }
+  .form-section {
+    margin-top: 30px;
+  }
+  .inputFill {
+    width: 100%;
+  }
+  .messageInput {
+    width: 100%;
+    height: 130px;
+  }
+  .formBtn {
+    width: 100%;
+    margin-top: 22px;
+    padding: 8px 100px;
+  }
+}
+/* ------------------ End of Contact ------------------ */
