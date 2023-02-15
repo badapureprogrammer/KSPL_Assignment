@@ -1,8 +1,4 @@
 import "./style.css";
-import Testimonial from "./Testimonial";
-import About from "./About";
-import Contact from "./Contact";
-import Features from "./Features";
 import screenImage from "../images/phoneImg.png";
 
 const Home = () => {
